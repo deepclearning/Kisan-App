@@ -1,0 +1,43 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+
+  header{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    a{
+      color: #458eff;
+      font-size: 14px;
+      background: white;
+       &.active{
+         border-bottom: 3px solid green;
+       }
+    }
+  }
+
+  main{
+    height: 100%;
+    overflow: auto;
+  }
+
+  table{
+    width: 100%;
+    tr td, tr th {
+      height:40px;
+      padding-left: 20px;
+    }
+
+    th{
+      position: sticky;
+      top: 0;
+      background: white;
+    }
+  }
+}

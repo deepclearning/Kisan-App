@@ -4,6 +4,31 @@
   display: grid;
   grid-template-rows: 80px 1fr;
 
+  button{
+  height: 40px;
+  color: white;
+  background: #458eff;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  text-align: center;
+  line-height: 40px;
+  min-width: 150px;
+  &:hover, &:active{
+    color: #458eff;
+    background-color: white;
+    border: 1px solid #458eff;
+    cursor: pointer;
+  }
+}
+
+
+  a{
+    text-decoration: none;
+    color: #000f54;
+    &:active, &:visited, &:hover{
+      text-decoration: none;
+    }
+  }
   header{
     height: 100%;
     display: flex;
@@ -14,10 +39,16 @@
 
     a{
       color: #458eff;
-      font-size: 14px;
+      height: 100%;
+      width: 100%;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
       background: white;
+      line-height: 80px;
+      border-bottom: 8px solid transparent;
        &.active{
-         border-bottom: 3px solid green;
+         border-bottom: 8px solid green;
        }
     }
   }
@@ -38,6 +69,53 @@
       position: sticky;
       top: 0;
       background: white;
+    }
+  }
+}
+
+tr{
+  &:hover{
+    cursor: pointer;
+    background: #dedede;
+  }
+}
+
+form{
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 6px 4px 12px 2px #b9bada;
+}
+
+textarea{
+  display: block;
+  width: calc( 100% - 24px );
+  height: 200px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #458eff;
+  padding:12px;
+  margin-bottom: 16px;
+}
+
+.user-card > div{
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 6px 4px 12px 2px #b9bada;
+
+  .row{
+    margin-bottom: 12px;
+
+    b{
+      color: #458eff;
+      margin-right: 4px;
+    }
+
+    span {
+      color: rgba(0,0,0,0.5);
     }
   }
 }
